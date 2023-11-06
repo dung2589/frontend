@@ -1,3 +1,35 @@
 h2{
     color: blue;
 }
+
+/* example use id */
+#use-id{
+    color: yellowgreen;
+}
+
+/* example use class */
+.use-class{
+    color: brown;
+}
+
+#variable{
+    color: black;
+}
+
+/* example CSS Variable */
+:root{
+    /* biến toàn cục */
+    --text-color: red; 
+    --text-size: 15px;
+}
+
+#test-variable{
+    color: var(--text-color);
+    font-size: var(var(--text-size));
+}
+
+#test-variable2{
+    /* biến cục bộ */
+    --my-color: yellow;
+    color: var(--my-color);
+}
